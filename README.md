@@ -1,6 +1,6 @@
 
 ## B-UMS User Dashboard (V1.0) 🎮
-
+Developer : Mayank Chawdhari
 This project showcases a modern and interactive user dashboard for a gaming platform, prioritizing both user experience and robust security.
 
 **Key Features:**
