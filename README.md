@@ -12,8 +12,8 @@ This project showcases a modern and interactive user dashboard for a gaming plat
     *   Responsive design for optimal viewing on all devices.
 
 *   **Informative User Interface:**
-    *   Account details presented in easy-to-read capsules.
-    *   Community guidelines and platform rules highlighted in visually distinct cards.
+    *   Account details are presented in easy-to-read capsules.
+    *   Community guidelines and platform rules are highlighted in visually distinct cards.
     *   Action buttons for common tasks (e.g., change password, check balance).
 
 *   **Robust Backend Security:**
@@ -49,14 +49,17 @@ This project showcases a modern and interactive user dashboard for a gaming plat
 *   **User Customization:** Allowing users to personalize their dashboard themes and layouts.
 *   **Enhanced Security:** Implementing two-factor authentication and additional security measures.
 
-
 **Contributions:**
 
 Contributions are welcome! Feel free to open issues or submit pull requests to improve this project.
 
+**Note:**
+
+I know the script has a lot of problems but it will be fixed in the coming versions. ( LACK OF TIME )
+
 **License:**
 
-This project is licensed under the.
+This project is licensed under the CC0-1.0 license.
 
 
 
