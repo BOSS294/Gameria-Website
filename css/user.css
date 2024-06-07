@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefefe; /* Darker blue background */
+    color: #000000; /* White text */
+    margin: 0;
+    overflow-y: auto; /* Enable custom scrollbar */
+}
+
+.user-dashboard-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    width: 90vw; /* Take up most of viewport width */
+    max-width: 1200px; /* Maximum width for large screens */
+    margin: 0 auto;
+}
+/* User Info Container */
+.user-info-container {
+    margin-bottom: 20px; /* Add spacing below the container */
+  }
+  
+  .user-info-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition on hover */
+  }
+  
+  .user-info-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
+  }
+  
+  .user-info-card h3 {
+    color: #081F3F; /* Dark blue text */
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Info Capsules */
+  .info-capsule-container { /* New container for the capsules */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to next line if needed */
+    gap: 10px; 
+}
+.info-capsule {
+    flex: 1 1 200px; /* Make capsules flexible but with a minimum width */
+    display: flex;
+    align-items: center;
+    padding: 15px; /* Increase padding */
+    margin: 0;     /* Remove bottom margin */
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 8px; /* Slightly more rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+    transition: all 0.3s ease;
+}
+
+.info-capsule:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Even larger shadow on hover */
+    transform: translateY(-2px); /* Lift up slightly on hover */
+}
+.info-capsule .material-icons {
+    margin-right: 15px;  /* More space between icon and text */
+    font-size: 24px;     /* Slightly larger icon */
+}
+
+.info-capsule p {
+    margin: 0;
+    font-size: 14px; 
+    flex: 1;  /* Allow text to take up available space */
+}
+
+.info-capsule span { /* Style the actual info text */
+    font-weight: 600;
+}
+  
+/* User Rules Container */
+.user-rules-container {
+    display: grid;               /* Use grid for precise layout control */
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); /* Responsive columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows: header and cards */
+    justify-content: center;      /* Center items horizontally in each row */
+    gap: 20px;                         
+    width: 100%; 
+    border: 1px solid #ccc;            /* Subtle border */
+    border-radius: 20px;              /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: auto;
+}
+.user-rules-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(25, 11, 11); /* Dark color for text */
+    text-align: center;
+    grid-column: 1 / -1; /* Span across all columns */
+    margin-bottom: 20px;
+}
+
+.rule-card {
+    flex: 0 0 calc(25% - 20px); 
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center content within card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    overflow: hidden; /* Hide overflowing content */
+    width: 200px;
+    margin-left: 70%;
+    margin-bottom: 50px;
+}
+
+.rule-card:hover {
+    transform: translateY(-5px); /* Move card up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
+    cursor: pointer;
+}
+
+/* Black Header with Rule Topic */
+.rule-card .header { /* New class for the header */
+    background-color: black; 
+    color: white; 
+    padding: 10px;  /* Adjust as needed */
+    font-weight: bold;
+    border-radius: 10px 10px 0 0; /* Rounded top corners only */
+}
+
+/* Icon and Text Styling */
+.rule-card .material-icons {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: black;  /* Make icon black */
+}
+
+.rule-card p {
+    color: #333; /* Dark gray text */
+    font-size: 14px;
+    padding: 15px; /* Add padding around the text */
+    background-color: white;
+}
+
+/* User Controls Container */
+.user-controls-container {
+    display: grid;                /* Use grid for more precise layout control */
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); /* Responsive columns */
+    grid-template-rows: repeat(4, auto);  /* 3 rows for header, top buttons, bottom buttons */
+    gap: 20px;                         /* Spacing between cards */
+    border: 1px solid #ccc;            /* Subtle border */
+    border-radius: 20px;              /* Rounded corners */
+    padding: 20px;                    /* Internal padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 95%; 
+    margin: auto;
+}
+.user-controls-container h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(25, 11, 11);
+    text-align: center;
+    grid-column: 1 / -1; /* Span across all columns */
+    margin-bottom: 15px;
+}
+/* Account Action Card (Control Button) */
+.control-button {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 15px; /* Slightly less rounded corners */
+    text-align: center;
+    cursor: pointer;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    transition: all 0.2s ease; /* Smoother transition */
+}
+
+.control-button:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.2); /* More subtle hover effect */
+}
+
+.control-button .material-icons {
+    font-size: 36px; /* Slightly smaller icon */
+    margin-bottom: 10px; /* Less spacing between icon and text */
+}
+
+.control-button p {
+    color: #FFFFFF; 
+    font-size: 14px;  
+    font-weight: 400;  /* Normal font weight */
+    font-family: "Montserrat", sans-serif; /* Modern font (optional) */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .control-button {
+        flex: 0 0 calc(50% - 10px); /* Two cards per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .control-button {
+        flex: 0 0 calc(100%); /* One card per row on small screens */
+    }
+}
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+
+

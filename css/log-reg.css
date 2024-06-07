@@ -1,0 +1,127 @@
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+    width: calc(100% - 24px); /* Adjust for padding */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Slightly more rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle white background */
+    color: #081F3F; /* Dark blue text */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inset shadow for depth */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    outline: none; /* Remove default outline */
+    background-color: rgba(255, 255, 255, 0.2); /* Brighter background on focus */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* Blue glow on focus */
+}
+
+/* Optional: Add a subtle border on hover */
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover {
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Very light border */
+}
+
+
+.btn-logreg {
+    background: rgba(255, 255, 255, 0.8); /* More opaque white for contrast */
+    color: #081F3F;  /* Dark blue text for visibility */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    backdrop-filter: blur(10px); /* Glassy effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.btn-logreg:hover {
+    background: rgba(255, 255, 255, 0.95); /* Almost fully opaque on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+}
+
+/* Password visibility toggle */
+.password-toggle {
+    position: relative;
+}
+
+.password-toggle i {
+    position: absolute;
+    top: 65%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+/* General Label Styling (Login & Register) */
+.container label {
+    display: block;
+    margin-bottom: 5px;  /* Reduced spacing */
+    color: #081F3F;    /* Dark blue, matching the input text */
+    font-size: 14px;     /* Slightly smaller font size */
+    font-weight: 500;  /* Medium weight for a modern look */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.container label:hover {
+    color: #007bff;  /* Blue on hover */
+}
+
+/* Heading Styling (Login & Register) */
+.container h2 {
+    font-size: 2rem;        /* Larger for more impact */
+    margin-bottom: 30px;    /* Increased spacing for breathing room */
+    color: #081F3F;        /* Dark blue, consistent with labels */
+    font-weight: 600;     /* Slightly bolder for emphasis */
+    text-align: center;      /* Centered for balance */
+    text-transform: uppercase;  /* Optional: uppercase for a modern look */
+    letter-spacing: 1px;    /* Subtle letter spacing for visual appeal */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+
+/* Custom styling for the "Login Now" link */
+.login-link {
+    color: #11161c; /* Link color */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    margin-left: 250px;
+}
+
+.login-link:hover {
+    color: #0056b3; /* Darker color on hover */
+    cursor: pointer;
+}

@@ -1,0 +1,72 @@
+/* Overall Container Styling */
+.terms-conditions {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    max-width: 800px; /* Adjust width as needed */
+    margin: 20px auto;
+  }
+  
+  /* Heading Styling */
+  .terms-conditions h2 {
+    color: #081F3F; /* Dark blue text */
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add a slight text shadow */
+  }
+  
+  /* Subheading Styling */
+  .terms-conditions h3 {
+    color: #000000; /* White text */
+    font-size: 1.2rem;
+    margin-top: 25px; 
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraph Styling */
+  .terms-conditions p {
+    color: #000000; /* White text */
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* List Styling */
+  .terms-conditions ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px; /* Add indentation for visual clarity */
+  }
+  
+  .terms-conditions li {
+    color: #050101; /* White text */
+    margin-bottom: 10px;
+  }
+  
+  /* Hover Effects and Transitions */
+  .terms-conditions h3,
+  .terms-conditions li {
+    transition: transform 0.2s ease, text-shadow 0.2s ease; /* Smooth transitions */
+  }
+  
+  .terms-conditions h3:hover,
+  .terms-conditions li:hover {
+    transform: translateX(5px); /* Slide slightly to the right */
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+  }
+  
+  /* Scrollbar Styling */
+  .terms-conditions::-webkit-scrollbar {
+    width: 8px; /* Adjust width as needed */
+  }
+  
+  .terms-conditions::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .terms-conditions::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+  }
+  
